@@ -10,7 +10,7 @@ from sklearn.metrics import confusion_matrix
 
 # Veri Seti iceriye aktarılacak
 
-dt=pd.read_csv("C:\\Users\\oguzz\\Documents\\GitHub\\Natural-Language-Processing-Notes\\TextClassification\\sms_spam.csv", encoding="latin-1")
+dt=pd.read_csv("sms_spam.csv", encoding="latin-1")
 dt.drop(['Unnamed: 2', 'Unnamed: 3', 'Unnamed: 4'],axis=1,inplace=True)
 dt.columns=['label','text']
 print(dt.isna().sum())
